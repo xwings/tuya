@@ -1,0 +1,8 @@
+Python 2.7.10 (default, Jul 30 2016, 19:40:32)
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> f = file('run_90.exe')
+>>> contents = f.read().replace(b'\xE8\x6B\x67\xFB\xFF',b'\x90\x90\x90\x90\x90')
+>>> f = file('run_90_clean.exe','w')
+>>> f.write(contents)
+>>> f.close()

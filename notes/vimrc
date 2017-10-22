@@ -1,0 +1,7 @@
+" Some notes for vimrc
+
+set nocompatible
+syntax on
+set ruler
+
+"
