@@ -178,6 +178,11 @@ config openvpn 'fromlede'
         option script_security '3'
 ```
 
+#### update config
+```
+uci commit openvpn
+```
+
 #### In Firewall
 
 1. Create a interface for VPN, eg tun0
