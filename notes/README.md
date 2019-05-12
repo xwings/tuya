@@ -13,6 +13,11 @@ make image PROFILE=DOMINO PACKAGES="luci uhttpd openvpn-openssl luci-app-openvpn
 ```
 
 ```
+echo "05c6 5042" > /sys/bus/usb/drivers/qmi_wwan/new_id
+
+```
+
+```
 root@OpenWrt:~# uqmi -d /dev/cdc-wdm0 --get-data-status
 "disconnected"
 ```
