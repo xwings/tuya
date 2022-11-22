@@ -1,3 +1,5 @@
+Notes to install KDE-Plasma in LXC
+
 ```
 lxc.apparmor.profile: unconfined
 lxc.cgroup2.devices.allow: c 195:* rwm
