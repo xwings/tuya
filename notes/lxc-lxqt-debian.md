@@ -1,4 +1,4 @@
-Notes to install LXQT in LXC, Debian
+Notes to install LXQt in Linux Container with Debian
 
 ```
 lxc.apparmor.profile: unconfined
