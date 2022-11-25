@@ -22,7 +22,7 @@ lxc.cgroup.devices.allow: c 4:11 rwm
 
 Package Installation with min. LXQt
 ```
-apt update && apt upgrade -y && apt install -y lxqt libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all xrdp
+apt update && apt upgrade -y && apt install -y lxqt-core libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all xrdp
 ``` 
 
 x-session-manager config
