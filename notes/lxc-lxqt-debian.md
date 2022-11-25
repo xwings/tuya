@@ -1,5 +1,6 @@
 Notes to install LXQt in Linux Container with Debian
 
+Hardware Acceleration 
 ```
 lxc.apparmor.profile: unconfined
 lxc.cgroup2.devices.allow: c 195:* rwm
@@ -18,9 +19,13 @@ lxc.cgroup.devices.allow: c 4:10 rwm
 lxc.mount.entry: /dev/tty11 dev/tty0 none bind,optional,create=file
 lxc.cgroup.devices.allow: c 4:11 rwm
 ```
+
+Package Installation with min. LXQt
 ```
 apt update && apt upgrade -y && apt install -y lxqt libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all xrdp
 ``` 
+
+x-session-manager config
 ```
 update-alternatives --set x-session-manager /usr/bin/startlxqt
 ```
