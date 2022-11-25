@@ -1,4 +1,4 @@
-Notes to install KDE-Plasma in LXC
+Notes to install LXQT in LXC, Debian
 
 ```
 lxc.apparmor.profile: unconfined
@@ -19,10 +19,8 @@ lxc.mount.entry: /dev/tty11 dev/tty0 none bind,optional,create=file
 lxc.cgroup.devices.allow: c 4:11 rwm
 ```
 ```
-apt install xrdp
-apt install libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all
-apt update && apt upgrade -y && apt install -y x11vnc plasma-desktop lightdm build-essential libglvnd-dev pkg-config konsole xterm lightdm-gtk-greeter
+apt update && apt upgrade -y && apt install -y lxqt libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers xserver-xorg-video-all xrdp
+``` 
 ```
-```
-update-alternatives --set x-session-manager /usr/bin/startplasma-x11
+update-alternatives --set x-session-manager /usr/bin/startlxqt
 ```
