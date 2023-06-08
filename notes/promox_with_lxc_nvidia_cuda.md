@@ -63,7 +63,7 @@ sudo add-apt-repository contrib
 wget https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/cuda-keyring_1.0-1_all.deb
 sudo dpkg -i cuda-keyring_1.0-1_all.deb
 apt update
-apt install cuda
+apt install cuda libcudnn8 libcudnn8-dev
 ```
 
 ```
