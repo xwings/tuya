@@ -66,3 +66,7 @@ apt update
 apt install cuda
 ```
 
+```
+pip3 install nvidia-tensorrt
+```
+copy all the libnvinfer* in python /usr/local/cuda
