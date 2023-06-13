@@ -72,4 +72,18 @@ pip3 install cuda-python
 pip3 install tensorflow
 pip3 install nvidia-cudnn-cu12
 ```
+
+```
+ln -s  libcudart.so.12.1.105  libcudart.so.11.0
+ln -s libnvinfer.so.8 libnvinfer.so.7
+ln -s libnvinfer_plugin.so.8 libnvinfer_plugin.so.7
+ln -s libcublas.so.12.1.3.1 libcublas.so.11
+ln -s libcublasLt.so.12.1.3.1 libcublasLt.so.11
+ln -s libcufft.so.11.0.2.54 libcufft.so.10
+ln -s  libcusparse.so.12.1.0.106 libcusparse.so.11
+```
+
 copy all the libnvinfer* in python /usr/local/cuda
+```
+ cp ~/shvenv/lib64/python3.9/site-packages/tensorrt_libs/libnv* .
+```
