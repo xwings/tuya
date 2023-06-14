@@ -73,6 +73,11 @@ pip3 install tensorflow
 pip3 install nvidia-cudnn-cu12
 ```
 
+copy all the libnvinfer* in python /usr/local/cuda
+```
+ cp ~/shvenv/lib64/python3.9/site-packages/tensorrt_libs/libnv* .
+```
+
 ```
 ln -s  libcudart.so.12.1.105  libcudart.so.11.0
 ln -s libnvinfer.so.8 libnvinfer.so.7
@@ -83,7 +88,12 @@ ln -s libcufft.so.11.0.2.54 libcufft.so.10
 ln -s  libcusparse.so.12.1.0.106 libcusparse.so.11
 ```
 
-copy all the libnvinfer* in python /usr/local/cuda
 ```
- cp ~/shvenv/lib64/python3.9/site-packages/tensorrt_libs/libnv* .
+LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH python3
+import tensorflow as tf
+tf.config.list_physical_devices('GPU')
+```
+
+```
+ watch -d -n 0.5 nvidia-smi
 ```
