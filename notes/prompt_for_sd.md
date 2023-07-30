@@ -1,7 +1,7 @@
 ### txt2img
 #### prompt
 ```
-modelname, 1girl,(full body), (long legs),(in 5 star beach hotel), (realistic), (high quality), white bikini, (heart-shaped face), (nikon fm2) ,(Fujifilm Fujicolor 100 35mm Film)
+modelname, 1girl,(upper body), (in coffee shop), (realistic), (high quality), elegent white dress, 
 ```
 #### negative prompt
 ```
