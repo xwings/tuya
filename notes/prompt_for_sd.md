@@ -17,7 +17,7 @@ modelname
 
 #### class prompt
 ```
-photo of a lady, beautiful young lady, realistic, tiktok model,  perfect female body, instagram model, onlyfans
+1girl, photo of a lady, beautiful young lady, realistic, tiktok model,  perfect female body, instagram model, onlyfans
 ```
 
 #### Classification Image Negative Prompt
