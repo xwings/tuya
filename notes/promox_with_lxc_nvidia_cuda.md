@@ -89,6 +89,15 @@ ln -s  libcusparse.so.12.1.0.106 libcusparse.so.11
 ```
 
 ```
+curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | \
+  sudo apt-key add -
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | \
+  sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
+sudo apt-get update
+```
+
+```
 LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH python3
 import tensorflow as tf
 tf.config.list_physical_devices('GPU')
