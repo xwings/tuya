@@ -68,6 +68,7 @@ apt install cuda libcudnn8 libcudnn8-dev
 
 ```
 pip3 install nvidia-tensorrt cuda-python tensorflow nvidia-cudnn-cu12
+python3 -m pip install tensorflow[and-cuda]
 ```
 
 copy all the libnvinfer* in python /usr/local/cuda
