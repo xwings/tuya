@@ -1,19 +1,30 @@
-Promox version: 7.4
+Promox version: 8
 Nvidia card: RTX 3060
-Nvidia driver version: NVIDIA-Linux-x86_64-530.30.02.run
-Source: https://gist.github.com/egg82/90164a31db6b71d36fa4f4056bbee2eb
 
-Edit /etc/modules-load.d/modules.conf and add the following to the end of the file:
+Remove Previous Nvidia Drivers Installed via APT
 ```
-nvidia
-nvidia_uvm
+sudo apt autoremove nvidia* --purge
+```
+
+Remove Previous Nvidia Drivers Installed via RUNFILE
+```
+sudo /usr/bin/nvidia-uninstall
+```
+
+```
+curl -fSsL https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/3bf863cc.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/nvidia-drivers.gpg > /dev/null 2>&1
+echo 'deb [signed-by=/usr/share/keyrings/nvidia-drivers.gpg] https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /' | sudo tee /etc/apt/sources.list.d/nvidia-drivers.list
+```
+
+Update
+```
+apt update
+apt upgrade
 ```
 
 ```
 apt install build-essential pve-headers-$(uname -r)
-wget <link you copied>
-chmod +x ./NVIDIA-Linux-x86_64-<VERSION>.run
-./NVIDIA-Linux-x86_64-<VERSION>.run
+apt install nvidia-driver
 ```
 
 
