@@ -16,3 +16,8 @@ regedit
 > Add dword32 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LsaCfgFlags as 0
 > Change Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity to 0
 ```
+
+check
+```
+msinfo32.exe
+```
