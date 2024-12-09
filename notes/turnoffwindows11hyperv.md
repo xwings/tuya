@@ -17,6 +17,15 @@ regedit
 > Change Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity to 0
 ```
 
+tools by Microsoft:
+
+DG_Readlness will disable 
+
+``
+> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+> .\DG_Readiness_Tool_v3.6.ps1 -Disable
+``
+
 check
 ```
 msinfo32.exe
