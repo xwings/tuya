@@ -19,12 +19,14 @@ regedit
 
 tools by Microsoft:
 
-DG_Readlness will disable 
+[DG_Readlness](https://www.microsoft.com/en-us/download/details.aspx?id=53337) will disable disable Device Guard or Credential Guard. There are two steps after reboot
+- Optional: **Disable Credential Guard**, to keep this option. **Do not** press "F3"
+- **Disable Credential Guard**, press "F3" to continus 
 
-``
+```
 > Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 > .\DG_Readiness_Tool_v3.6.ps1 -Disable
-``
+```
 
 check
 ```
