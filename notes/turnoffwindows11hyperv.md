@@ -1,6 +1,10 @@
 DISABLE HYPER-V. TURN OFF DEVICE GUARD, CREDENTIAL GUARD, MEMORY ISOLATION. Otherwise, it'll run like crap without AMD-V (see vbox logs).
 ```
-Control Panel -> Programs & Features -> Turn Windows Features on or off -> Hyper-V (possibly also Windows Hypervisor Platform, Windows Sub for Linux)
+Control Panel -> Programs & Features -> Turn Windows Features on or off -> Turn off
+- Hyper-V 
+- Windows Hypervisor Platform
+- Windows Sub for Linux
+- Virtual Machine Platform
 ```
 
 ```
