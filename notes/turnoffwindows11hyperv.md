@@ -3,6 +3,9 @@ DISABLE HYPER-V. TURN OFF DEVICE GUARD, CREDENTIAL GUARD, MEMORY ISOLATION. Othe
 Control Panel -> Programs & Features -> Turn Windows Features on or off -> Hyper-V (possibly also Windows Hypervisor Platform, Windows Sub for Linux)
 ```
 
+```
+Windows Security > Device security > Core isolation details > Memory integrity
+```
 powershell (run as administrator)
 ```
 > bcdedit /set hypervisorlaunchtype off
