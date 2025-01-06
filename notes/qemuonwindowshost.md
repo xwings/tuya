@@ -1,3 +1,8 @@
+
+```
+sudo apt-get install g++-mingw-w64 mingw-w64 mingw-w64-tools mingw-w64-i686-dev mingw-w64-x86-64-dev nsis
+```
+
 1. Install windows tap from openvpn
 2. Rename tap in windows. example tap0
 3. Share network to tap0 from main network adapter
