@@ -2,6 +2,12 @@
 ```
 sudo apt-get install g++-mingw-w64 mingw-w64 mingw-w64-tools mingw-w64-i686-dev mingw-w64-x86-64-dev nsis
 ```
+pacman -Syu
+pacman -Su
+pacman -S base-devel mingw-w64-x86_64-toolchain git python ninja
+pacman -S mingw-w64-x86_64-glib2 mingw-w64-x86_64-pixman python-setuptools
+pacman -S mingw-w64-x86_64-gtk3 mingw-w64-x86_64-SDL2 mingw-w64-x86_64-libslirp
+pacman -S mingw-w64-x86_64-python
 
 ```
 ./configure --cross-prefix=x86_64-w64-mingw32- --enable-debug --enable-debug --enable-gtk --enable-sdl –target-list=x86_64-softmmu prefix=/opt/qemuwin
