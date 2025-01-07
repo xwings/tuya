@@ -3,6 +3,10 @@
 sudo apt-get install g++-mingw-w64 mingw-w64 mingw-w64-tools mingw-w64-i686-dev mingw-w64-x86-64-dev nsis
 ```
 
+```
+./configure --cross-prefix=x86_64-w64-mingw32- --enable-debug --enable-debug --enable-gtk --enable-sdl –target-list=x86_64-softmmu prefix=/opt/qemuwin
+```
+
 1. Install windows tap from openvpn
 2. Rename tap in windows. example tap0
 3. Share network to tap0 from main network adapter
