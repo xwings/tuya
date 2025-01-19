@@ -29,14 +29,8 @@ apt install build-essential pve-headers-$(uname -r)
 
 for driver
 ```
-apt install nvidia-driver
+apt install nvidia-driver libnvidia-ml1 nvidia-driver-cuda
 ```
-
-With cuda
-```
-apt install nvidia-driver-cuda
-```
-
 
 Create the file /etc/modprobe.d/nvidia-installer-disable-nouveau.conf with the following contents:
 ```
