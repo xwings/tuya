@@ -29,7 +29,7 @@ apt install build-essential pve-headers-$(uname -r)
 
 for driver
 ```
-apt install nvidia-driver-bin
+apt install nvidia-driver
 ```
 
 With cuda
