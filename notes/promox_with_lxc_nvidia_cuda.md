@@ -22,9 +22,18 @@ apt update
 apt upgrade
 ```
 
+driver
 ```
 apt install build-essential pve-headers-$(uname -r)
-apt install nvidia-driver
+```
+
+for driver
+```
+apt install nvidia-driver-bin
+```
+
+With cuda
+```
 apt install nvidia-driver-cuda
 ```
 
