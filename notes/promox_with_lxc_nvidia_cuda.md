@@ -25,7 +25,7 @@ apt upgrade
 ```
 apt install build-essential pve-headers-$(uname -r)
 apt install nvidia-driver
-apt install nvidia-cuda-driver
+apt install nvidia-driver-cuda
 ```
 
 
