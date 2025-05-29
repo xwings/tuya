@@ -29,7 +29,7 @@ apt install build-essential pve-headers-$(uname -r)
 
 for driver
 ```
-apt install nvidia-driver libnvidia-ml1 nvidia-driver-cuda
+apt install nvidia-driver-cuda
 ```
 
 for docker
