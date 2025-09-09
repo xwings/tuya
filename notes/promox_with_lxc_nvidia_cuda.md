@@ -1,9 +1,22 @@
-Promox version: 8
+Proxmox version: 9
 Nvidia card: RTX 3060
+
+Update
+```
+apt update
+apt dist-upgrade
+```
 
 Remove Previous Nvidia Drivers Installed via APT
 ```
 sudo apt autoremove nvidia* --purge
+sudo apt purge '^nvidia-.*'
+```
+
+driver
+```
+apt install build-essential pve-headers-$(uname -r)
+apt install nvidia-driver nvidia-driver-cuda
 ```
 
 Remove Previous Nvidia Drivers Installed via RUNFILE
@@ -16,21 +29,7 @@ curl -fSsL https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86
 echo 'deb [signed-by=/usr/share/keyrings/nvidia-drivers.gpg] https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /' | sudo tee /etc/apt/sources.list.d/nvidia-drivers.list
 ```
 
-Update
-```
-apt update
-apt upgrade
-```
 
-driver
-```
-apt install build-essential pve-headers-$(uname -r)
-```
-
-for driver
-```
-apt install nvidia-driver-cuda
-```
 
 for docker
 ```
