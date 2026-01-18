@@ -1,0 +1,1 @@
+find ./input/ -type f \( -iname "*.JPG" \) -exec sh -c 'convert "$0" -auto-orient -set option:watermark_width "%[fx:int(w*0.15)]" \( logo.png -resize 500 -channel A -fx "u*0.3" \) -gravity northeast -geometry +10+10 -composite "output/${0##*/}"' {} \;
