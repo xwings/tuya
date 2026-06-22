@@ -12,5 +12,5 @@ git push -f origin main
 ### client fetch new reset
 ```
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/main
 ```
